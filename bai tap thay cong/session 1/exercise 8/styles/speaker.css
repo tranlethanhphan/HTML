@@ -1,0 +1,171 @@
+
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color:white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+header h2{
+	font-size:170%;
+	color:#800000;
+}
+header h3{
+	font-size:130%;
+	font-family:italic;
+}
+header{
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #931420;
+	background-image: linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient( 30deg, #4126C9 0%, #ECC4F9 30%, white 50%, #2AA1FF 80%, #0D39AF 100%);
+}
+/* the styles for the header */
+header img {
+	float: left;
+	padding:0 30px;
+}
+
+#nav_menu ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	position:relative;
+}
+#nav_menu ul li{
+	float:left;
+}
+#nav_menu ul li a{
+	display:block;
+	width:160px;
+	color:white;
+	background-color:#800000;
+	font-weight:bold;
+	padding: 1em 0;
+	text-align:center;
+	text-decoration:none;
+}
+#nav_menu a.curent{
+	color:yellow;
+}
+#nav_menu ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+}
+#nav_menu ul ul li{ 
+float:none;
+}
+#nav_menu ul li:hover >ul {
+	display:block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+main {
+	clear: left;
+}
+main section {
+	width:525px;
+	float:right;
+	padding: 0 20px 20px 20px;
+}
+
+main section h2{
+	font-size:130%;
+	padding: .5em 0 .25em 0;
+}
+main section h1{
+	font-size:150%;
+	color:#800000;
+	padding: .5em 0 .25em 0;
+}
+main section p{
+	padding-bottom:0.5em;
+}
+
+main section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+main section ul {
+	padding: 0 0 .25em 1.25em;
+}
+main section ul li {
+	padding-bottom: .35em;
+}
+main section article{
+	padding:0.5em 0;
+}
+main section article img{
+    border: 1px solid black;
+    float: right;
+    margin: 0.5em 0 1em 1em;
+}
+
+main section  article h1 {
+	font-size:150%;
+	padding:.5 em 0 0.25em 0;
+	margin:0;	
+	
+}
+main section article h3 {
+	font-size:105%;
+	padding-bottom:0.25em;
+}	
+main aside {
+	width: 215px;
+	float: right;
+	padding: 0 0 20px 20px;
+}
+main aside h2{
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+main aside h3{
+	font-size:105%;
+	font-family:italic;
+	padding-bottom:0.25em;
+}
+main aside img{
+	padding-bottom: 1em;
+}
+footer {
+	clear:both;
+	background-color:#931420;
+}
+
+footer p{
+	text-align:center;
+	color:white;
+	padding: 1em 0px;
+}
+
+a:focus, a:hover {
+	font-style: italic;
+}
+
+.shadow{
+	color: #800000;
+    text-shadow: 2px 0px 10px;
+}
+	#speakers {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+/* the styles for the footer */
